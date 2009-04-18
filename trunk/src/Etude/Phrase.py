@@ -6,7 +6,7 @@ class Phrase(object):
 
         self.instr = f.makeInstrument()
         self.sco = ""
-        sig = choice([5,7,8,9,11,13])
+        sig = choice([4,8,12,16])
         seq = Sequence(sig)
         bardur = dur/bars
         notedur = bardur/sig
