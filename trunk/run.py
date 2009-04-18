@@ -1,11 +1,14 @@
 import os
 from Etude import *
 
-#sco = Score()
-#os.system("csound -d   -m 4 -W  -o etude.wav etude.orc etude.sco -")
-#os.system("aplay etude.wav")
+mf = MomentFactory(2,16)
 
-f = InstrumentFactory()
-i = f.makeInstrument()
-n = f.makeNote(0.666)
-print n
+
+sco = Score(360,mf)
+os.system("csound -d   -m 4 -W  -o etude.wav etude.orc etude.sco -")
+os.system("aplay etude.wav")
+
+#f = InstrumentFactory()
+#i = f.makeInstrument()
+#n = i.makeNote(0.666)
+#print n
