@@ -1,7 +1,7 @@
 import os
 from Etude import *
 
-mf = MomentFactory(2,16)
+mf = MomentFactory(1,32)
 
 
 sco = Score(360,mf)
