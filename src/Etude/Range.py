@@ -1,4 +1,4 @@
-from Utils import exprand,linrand
+from Etude.Utils import exprand,linrand
 class Range():
     def __init__(self,minv,maxv,isexp=True):
         self.minv = minv

@@ -1,8 +1,8 @@
-from MomentFactory import MomentFactory
-from InstrumentFactory import InstrumentFactory
-from Phrase import Phrase
+from  .MomentFactory import MomentFactory
+from .InstrumentFactory import InstrumentFactory
+from .Phrase import Phrase
 from random import *
-from Utils import exprandint
+from .Utils import exprandint
 class Moment(MomentFactory):
     def __init__(self,start,duration):
         self.start=start

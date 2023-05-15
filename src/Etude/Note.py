@@ -1,7 +1,7 @@
-import Instrument
+from .Instrument import Instrument
 from  random import random
 
-class Note(Instrument.Instrument):
+class Note(Instrument):
     def __init__(self,istart):
         super(Note,self).__init__()
         self.istart = istart

@@ -1,6 +1,6 @@
 from random import *
-from Sequence import Sequence
-from Utils import exprandint
+from . import Sequence
+from .Utils import exprandint
 class Phrase(object):
     def __init__(self,f,start,dur,bars):
 

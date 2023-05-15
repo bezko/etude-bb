@@ -1,4 +1,6 @@
-import os
+import os, sys
+sys.path.append(os.path.join(os.getcwd(), "src"))
+
 from Etude import *
 
 mf = MomentFactory(1,32)

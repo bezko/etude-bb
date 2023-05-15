@@ -1,5 +1,5 @@
 import random
-from Utils import exprand
+from  .Utils import exprand
 class Score():
     def __init__(self,dur,mf,filename="etude.sco"):
         self.dur = dur

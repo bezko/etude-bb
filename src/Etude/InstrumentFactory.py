@@ -1,5 +1,4 @@
-from Range import Range
-import Instrument
+from .Range import Range
 class InstrumentFactory(object):
     def __init__(self):
         self.iattack = Range(0.001,0.05)
@@ -10,7 +9,8 @@ class InstrumentFactory(object):
         self.ihness = Range(0,.1,False)
         self.idist  = Range(0.25,1)
     def makeInstrument(self):
-        instr = Instrument.Instrument()
+        from .Instrument import Instrument;
+        instr = Instrument()
         instr.idur =   self.idur()
         instr.iattack =   self.iattack()
         instr.ipan = self.ipan()
